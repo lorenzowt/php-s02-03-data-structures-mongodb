@@ -1,0 +1,60 @@
+{
+    "clients": [
+        {
+            "_id": ObjectId("65a3b2c1d4e5f6789a0b1c01"),
+            "name": "Client Name",
+            "address": "Right Street, 123",
+            "phone": "678921236",
+            "email": "email@email.com",
+            "registrationDate": ISODate("2023-09-23"),
+            "recommendedBy": ObjectId("265g3b56cb12l97d65rb7f"),
+            "purchases": [
+                {
+                    "_id": ObjectId("60a3b2c1d4e5f6789a0b1c02"),
+                    "employeeId": ObjectId("67a3b2c1d4e5f6789a0b1c99"),
+                    "salesDateTime": ISODate("2026-06-10T11:45:00Z"),
+                    "brand": "Rayban",
+                    "frametype": "metallic",   //accepts "floating", "horned-rimmed", "metal"
+                    "frameColor": "black",
+                    "supplierId": ObjectId("66a3b2c1d4e5f6789a0b1c01"),
+                    "price": 127.0,
+                    "prescription": {
+                        "left": 2.3,
+                        "right": 2.0
+                    },
+                    "glassColor": {
+                        "left": null,
+                        "right": null
+                    }
+                } 
+            ]
+        }
+    ],
+
+    "suppliers": [
+        {
+            "_id" ObjectId("66a3b2c1d4e5f6789a0b1c01"),
+            "name": "Goggles Associated SL.",
+            "address": {
+                "street": "Fake Street",
+                "number": "20",
+                "floor": "2",
+                "door": "1",
+                "city": "Barcelona",
+                "zipcode": "08001",
+                "country": "Spain"
+            },
+            "phone": "9347645923",
+            "fax": "9345429654",
+            "nif": "754389345K"
+        }
+    ],
+
+    "employees": [
+        {
+            "_id": ObjectId("67a3b2c1d4e5f6789a0b1c99"),
+            "name": "Tom Nook"
+        }
+    ]
+
+}
